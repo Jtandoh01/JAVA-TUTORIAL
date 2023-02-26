@@ -1,16 +1,39 @@
 public class Main {
-    public static void main(String[] args) {
-        // Creating an array of Student objects
-        Student[] students = new Student[3];
+    public static void main(String[] args){
+        Employee employee1 = new Employee();
+        Employee employee2 = new Employee();
 
-        // Populating the array with student data
-        students[0] = new Student("Johnson Tandoh", 24, new double[]{3.50, 3.48, 3.02, 3.60});
-        students[1] = new Student("Janet Amankwah", 19, new double[]{4.0, 3.5, 3.73, 3.85});
-        students[2] = new Student("Boakye Kelvin", 21, new double[]{3.70, 3.57, 3.47, 3.85});
+        //setting attributes to employee1 object
+        employee1.setName("Kevin Durant");//used KD coz he's my favorite NBA star
+        employee1.setSalary(12.0);
+        employee1.setPosition("Team Captain");
+        employee1.setEmail("kd4ver@yahoo.com");
+        employee1.setPhone("+1 63636 2523");
 
-        // Calculating and printing out the average grade for each student
-        for (int i = 0; i < students.length; i++) {
-            System.out.println("The average grade for " + students[i].getName() + " is " + students[i].getAverage());
-        }
+        //getting employee1 object attributes and print to the screen
+        System.out.println("Employee1: ");
+        System.out.println("Name: "+ employee1.getName());
+        System.out.println("Salary: $"+employee1.getSalary()+"m");
+        System.out.println("Position: " + employee1.getPosition());
+        System.out.println("Email: "+ employee1.getEmail());
+        System.out.println("Phone: "+ employee1.getPhone());
+        System.out.println();
+
+        //setting attributes to employee2 object
+        employee2.setName("Sean Marks");
+        employee2.setSalary(4.0);
+        employee2.setPosition("General Manager");
+        employee2.setEmail("sMarksmaster@gmail.com");
+        employee2.setPhone("+1 22323 2332");
+
+        //getting employee2 object attributes and print to the screen
+        System.out.println("Employee2: ");
+        System.out.println("Name: "+ employee2.getName());
+        System.out.println("Salary: $"+employee2.getSalary()+"m");
+        System.out.println("Position: " + employee2.getPosition());
+        System.out.println("Email: "+ employee2.getEmail());
+        System.out.println("Phone: "+ employee2.getPhone());
+
+
     }
 }

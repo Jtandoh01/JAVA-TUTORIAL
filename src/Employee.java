@@ -1,14 +1,43 @@
-public class Employee extends Person{
-
-   //properties
+public class Employee {
+    private String name, position, email, phone;
     private double salary;
-    private String jobTitle;
 
-    public Employee(String name, int age, String gender){
-        super();
+    // no-argument constructor
+    public Employee(){}
+
+
+    public String getName() {
+        return name;
     }
 
-    //setters and getters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public double getSalary() {
         return salary;
     }
@@ -16,13 +45,4 @@ public class Employee extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
-    public String getJobTitle() {
-        return jobTitle;
-    }
-
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
-    }
-
 }
