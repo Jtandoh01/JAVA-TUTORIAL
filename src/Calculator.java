@@ -52,6 +52,7 @@ public class Calculator {
     //examples: in the following methods, same add() methods are implemented but with different
     //static methods do not require the creation of an object of the class: use the 'static' keyword to achieve this
 
+    //overloading add() method
     public static int add(int num1, int num2 ){
         return num1+num2;
     }

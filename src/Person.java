@@ -1,29 +1,35 @@
 public class Person {
+    //properties
     private String name;
     private int age;
-    private String address;
+    private String gender;
 
-    public Person(String name, int age, String address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+    //no-arg constructor
+    public Person(){}
 
+        // Getters and setters
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
         return age;
     }
 
-    public String getAddress() {
-        return address;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
 }
-
