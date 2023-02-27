@@ -24,5 +24,4 @@ public class Main {
         System.out.println(circle2.toString());
     }
 
-
 }
